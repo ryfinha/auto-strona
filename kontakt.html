@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Kontakt</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "webstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta charset = "UTF-8">
+	<meta name = "description" content = "Diler samochodowy - Przykladowa strona">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<base href = "">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+	</script>
+	
+
+</head>
+<body>
+<main id="main"> 
+	<header class="main-menu">
+		<div class="main-menu-items container">
+			<nav class="navbar main-menu-navigation top">
+				<div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			      </button>
+			      <a href="index.html"><img src="logo.bmp" alt="logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="Navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="about.html">O firmie</a></li>
+						<li><a href="pojazdy.html">Nasze pojazdy</a></li>
+						<li class="current"><a href="kontakt.html">Kontakt</a></li>
+					</ul>			
+					<ul class="nav navbar-right main-menu-social">
+						<li><div class="main-menu-country">
+								<img src="lang-pl.png" alt="pl">
+								<div class="country-list">
+								<table>
+									<tr>
+										<td class="country-head">English</td>
+										<td><img src="lang-uk.png" alt="uk"></td>
+									</tr>
+									<tr>
+										<td class="country-head">German</td>
+										<td><img src="lang-gr.png" alt="gr"></td>
+									</tr>
+									<tr>
+										<td class="country-head">Russian</td>
+										<td><img src="lang-ru.png" alt="ru"></td>
+									</tr>
+									<tr>
+										<td class="country-head">Italian</td>
+										<td><img src="lang-it.png" alt="it"></td>
+									</tr>
+									<tr>
+										<td class="country-head">French</td>
+										<td><img src="lang-fr.png" alt="fr"></td>
+									</tr>					
+								</table>
+								</div>
+							</div>
+						</li>
+						<li><img class="social-icon" src="viber.png" alt="viber" title="Zadzwoń w aplikacji VIBER"></li>
+						<li><img class="social-icon" src="skype.png" alt="skype" title="Zadzwoń przez SKYPE"></li>
+						<li><img class="social-icon" src="message.png" alt="message" title="What's App"></li>
+					</ul>				
+				</div>
+			</nav>
+			
+			
+		</div>
+	</header> 
+	<section class="map-contact">		
+	</section>
+	<section class="about-subsite">
+		 <div class="container">
+		 	<div class="row">
+			 	<div class="col-sm-12">
+			 		<div class="nav-map">
+						<span><b>Strona główna</b></span>
+						<span> > </span>
+						<span id="page-name"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5 contact-info">
+					<p class="contact-info-header">Autotanker</p>
+					<div class="contact-par">
+						<i class="fa fa-map-marker"></i><span>00-000 Miasto 1, woj. opolskie</span>
+					</div>
+					<div class="contact-par">
+						<p>
+							<i class="fa fa-envelope-o"></i><span>info@email.com</span>
+						</p>
+						<p>
+							<i class="fa fa-envelope-o"></i><span>info2@email.com</span>
+						</p>
+					</div>
+					<div class="contact-par">
+						<p>
+							<i class="fa fa-phone"></i><span>+48 123 456 789</span>
+						</p>
+						<p>
+							<i class="fa fa-phone"></i><span>+48 987 654 321</span>
+						</p>
+					</div>
+					<div class="contact-par">
+						<p>PL 123456789</p>
+						<p>REGON: 987654321</p>
+					</div>
+
+				</div>
+				<div class="col-sm-7">
+					<div class="contact-form">
+						<form class="form">
+							<div class="row">
+								<div class="col-sm-6">
+									<div>
+										<input type="text" id="formName"  required placeholder="Imię i nazwisko *" />
+									</div>	
+									<div>
+										<input type="text" id="formPhone" placeholder="Telefon" />
+									</div>						
+								</div>
+								<div class="col-sm-6">
+									<div>
+										<input type="text" id="formMail" required placeholder="E-mail *" />
+									</div>	
+									<div>
+										<input type="text" id="formSubject" placeholder="Temat" />
+									</div>						
+								</div>
+							</div>
+							<div>
+								<textarea rows="7" name="message" placeholder="Treść wiadomości *" required="required"></textarea>
+							</div>
+							<button type="submit" class="submit-button button upcase">
+								<span>wyślij</span>
+							</button>
+						</form>
+					</div>
+				</div>	
+			</div>		
+		</div>
+			
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="main-menu-logo">
+						<a href="index.html" class="logo">
+							<img src="logo-rev.bmp" alt="logo">
+						</a>
+					</div>
+					<div class="main-menu-social">
+					<ul>
+						<li><img class="social-icon" src="viber.png" alt="viber" title="Zadzwoń w aplikacji VIBER"></li>
+						<li><img class="social-icon" src="skype.png" alt="skype" title="Zadzwoń przez SKYPE"></li>
+						<li><img class="social-icon" src="message.png" alt="message" title="What's App"></li>
+					</ul>				
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<h4>Adres</h4>
+					<p>00-000 Miasto 1</p>
+					<p>woj.opolskie</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Kontakt</h4>
+					<p>info@email.com</p>
+					<p>info2@email.com</p>
+					<p>Telefon: +48 123456789</p>
+					<p>Telefon: +48 987654321</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Dane</h4>
+					<p>PL 123456789</p>
+					<p>REGON: 987654321</p>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+	</footer>
+</main>
+
+<script>
+
+
+    const FormValidate = function(form, options) {
+        const defaultOptions = {
+            classError : 'error'
+        }
+
+        this.form = form;
+        this.options = Object.assign({}, defaultOptions, options);
+
+        //wyłączamy htmlową walidację
+        this.form.setAttribute('novalidate', 'novalidate');
+
+        this.prepareElements();
+        this.bindSubmit();
+    };
+
+    FormValidate.prototype.prepareElements = function() {
+        const elements = this.form.querySelectorAll('[required]');
+
+        [].forEach.call(elements, function(element) {
+            //sprawdzamy typ pola
+            if (element.nodeName.toUpperCase() == 'INPUT') {
+                const type = element.type.toUpperCase();
+
+                //dla każdego pola dodajemy obsługę funkcji sprawdzającej
+                if (type == 'TEXT') {
+                    element.addEventListener('input', function(e) {
+                        this.testInputText(e.target);
+                    }.bind(this));
+                }
+                if (type == 'EMAIL') {
+                    element.addEventListener('input', function(e) {
+                        this.testInputEmail(e.target);
+                    }.bind(this));
+                }
+            }
+            if (element.nodeName.toUpperCase() == 'TEXTAREA') {
+                element.addEventListener('input', function(e) {
+                    this.testInputText(e.target);
+                }.bind(this));
+            }
+        }, this);
+    };
+
+    FormValidate.prototype.showFieldValidation = function(input, inputIsValid) {
+        if (!inputIsValid) {
+            input.parentElement.classList.add(this.options.classError);
+        } else {
+            input.parentElement.classList.remove(this.options.classError);
+        }
+    };
+
+    FormValidate.prototype.testInputText = function(input) {
+        let inputIsValid = true;
+        const pattern = input.getAttribute('pattern');
+
+        if (pattern !== null) {
+            const reg = new RegExp(pattern);
+            if (!reg.test(input.value)) {
+                inputIsValid = false;
+            }
+        } else {
+            if (input.value==='') {
+                inputIsValid = false;
+            }
+        }
+
+        if (inputIsValid) {
+            this.showFieldValidation(input, true);
+            return true;
+        } else {
+            this.showFieldValidation(input, false);
+            return false;
+        }
+    };
+
+    FormValidate.prototype.testInputEmail = function(input) {
+        const mailReg = new RegExp('^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$', 'gi');
+
+        if (!mailReg.test(input.value)) {
+            this.showFieldValidation(input, false);
+            return false;
+        } else {
+            this.showFieldValidation(input, true);
+            return true;
+        }
+    };
+    FormValidate.prototype.bindSubmit = function() {
+        this.form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let formIsValidated = true;
+            const elements = this.form.querySelectorAll('[required]');
+
+            [].forEach.call(elements, function(element) {
+                if (element.nodeName.toUpperCase() == 'INPUT') {
+                    const type = element.type.toUpperCase();
+
+                    if (type == 'EMAIL') {
+                        if (!this.testInputEmail(element)) {
+                            formIsValidated = false;
+                        }
+                    }
+                    
+                    if (type == 'TEXT') {
+                        if (!this.testInputText(element)) {
+                            formIsValidated = false;
+                        }
+                    }
+                }
+                if (element.nodeName.toUpperCase() == 'TEXTAREA') {
+                    if (!this.testInputText(element)) {
+                        formIsValidated = false;
+                    }
+                }
+               
+            }, this);
+
+            if (formIsValidated) {
+                e.target.submit();
+            } else {
+                return false;
+            }
+        }.bind(this));
+    };
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = new FormValidate(document.querySelector('.form'), {});
+    });
+
+	/* Formularz */
+
+/* Koniec */
+function showTitle(){
+	document.getElementById("page-name").innerHTML = document.title;
+}
+	showTitle();
+</script>
+</body>
+</html>

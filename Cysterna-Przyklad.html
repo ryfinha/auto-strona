@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Cysterna - Przykład</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "webstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta charset = "UTF-8">
+	<meta name = "description" content = "Diler samochodowy - przykładowa strona">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<base href = "">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+	</script>
+	
+
+</head>
+<body>
+<main id="main"> 
+	<header class="main_menu">
+		<div class="main-menu-items container">
+			<nav class="navbar main-menu-navigation top">
+				<div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			      </button>
+			      <a href="index.html"><img src="logo.bmp" alt="logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="Navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="about.html">O firmie</a></li>
+						<li class="current"><a href="pojazdy.html">Nasze pojazdy</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>			
+					<ul class="nav navbar-right main-menu-social">
+						<li><div class="main-menu-country">
+								<img src="lang-pl.png" alt="pl">
+								<div class="country-list">
+								<table>
+									<tr>
+										<td class="country-head">English</td>
+										<td><img src="lang-uk.png" alt="uk"></td>
+									</tr>
+									<tr>
+										<td class="country-head">German</td>
+										<td><img src="lang-gr.png" alt="gr"></td>
+									</tr>
+									<tr>
+										<td class="country-head">Russian</td>
+										<td><img src="lang-ru.png" alt="ru"></td>
+									</tr>
+									<tr>
+										<td class="country-head">Italian</td>
+										<td><img src="lang-it.png" alt="it"></td>
+									</tr>
+									<tr>
+										<td class="country-head">French</td>
+										<td><img src="lang-fr.png" alt="fr"></td>
+									</tr>					
+								</table>
+								</div>
+							</div>
+						</li>
+						<li><img class="social-icon" src="viber.png" alt="viber" title="Zadzwoń w aplikacji VIBER"></li>
+						<li><img class="social-icon" src="skype.png" alt="skype" title="Zadzwoń przez SKYPE"></li>
+						<li><img class="social-icon" src="message.png" alt="message" title="What's App"></li>
+					</ul>				
+				</div>
+			</nav>
+			
+			
+		</div>
+	</header> 
+	<section class="content-subsite">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 banner-text">
+					<h2>Cysterna - Przykład</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-subsite">
+		 <div class="container">
+		 	<div class="row">
+			 	<div class="col-sm-12">
+			 		<div class="nav-map">
+						<span><b>Strona główna</b></span>
+						<span> > </span>
+						<span id="page-name"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="row">
+						<div class="col-sm-2 margin-no-padding">
+							<a class="prev" onclick="plusSlides(-1)"><span class="prev-slide">&#10094;</span></a>
+		  					<a class="next" onclick="plusSlides(1)"><span class="next-slide">&#10095;</span></a>				
+							
+								<img class="demo cursor" src="truck_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+								<img class="demo cursor" src="truck_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Woods">
+								<img class="demo cursor" src="truck_1.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Woods">
+								<img class="demo cursor" src="truck_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="The Woods">
+							
+						</div>
+						<div class="col-sm-9">
+							<div class="mySlides">
+							   <img src="truck_1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">					   
+							   <img src="truck_1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">					    
+							   <img src="truck_1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">					    
+							   <img src="truck_1.jpg" style="width:100%">
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<h2 style="text-transform: uppercase;">Cysterna - Przykład</h2>
+					<div>
+						<table class="truck-details">
+							<tr>
+								<td><span><i class="fa fa-check"></i>
+	</span></td>
+								<td><span>Cecha 1.</span></td>
+								<td><span><i class="fa fa-check"></i>
+	</span></td>
+								<td><span>Cecha 2.</span></td>
+							</tr>
+							<tr>
+								<td><span><i class="fa fa-check"></i>
+	</span></td>
+								<td><span>Cecha 3.</span></td>
+								<td><span><i class="fa fa-check"></i>
+	</span></td>
+								<td><span>Cecha 4.</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="truck-price">
+						<span>Cena netto:</span>
+						<h1>19 999 zł</h1>
+					</div>
+					<div class="truck-buttons">
+						<button class="button"><i class="fa fa-phone"></i>
+	<span>Skontaktuj się z nami</span></button>
+						<button class="button" style="background-color: black"><i class="fa fa-eye"></i> <span>Zobacz inne pojazdy</span></button>
+					</div>			
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<h2 class="blue-title" style="text-align: left;">Szczegóły pojazdu</h2>
+				<table class="details-table">
+					<tr>
+						<td>Marka</td>
+						<td>XXXXX</td>
+					</tr>
+					<tr>
+						<td>Typ</td>
+						<td>Cysterna</td>
+					</tr>
+					<tr>
+						<td>Rok produkcji</td>
+						<td>1998</td>
+					</tr>
+					<tr>
+						<td>Pojemność</td>
+						<td>40000</td>
+					</tr>
+					<tr>
+						<td>Liczba komór</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Zawieszenie</td>
+						<td>Pneumatyczne</td>
+					</tr>
+					<tr>
+						<td>Osie</td>
+						<td>bd.</td>
+					</tr>
+					<tr>
+						<td>ABS/EBS</td>
+						<td>Tak/Nie</td>
+					</tr>
+					<tr>
+						<td>Oś podnoszona</td>
+						<td>Tak</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="main-menu-logo">
+						<a href="index.html" class="logo">
+							<img src="logo-rev.bmp" alt="logo">
+						</a>
+					</div>
+					<div class="main-menu-social">
+					<ul>
+						<li><img class="social-icon" src="viber.png" alt="viber" title="Zadzwoń w aplikacji VIBER"></li>
+						<li><img class="social-icon" src="skype.png" alt="skype" title="Zadzwoń przez SKYPE"></li>
+						<li><img class="social-icon" src="message.png" alt="message" title="What's App"></li>
+					</ul>				
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<h4>Adres</h4>
+					<p>00-000 Miasto 1</p>
+					<p>woj.opolskie</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Kontakt</h4>
+					<p>info@email.com</p>
+					<p>info2@email.com</p>
+					<p>Telefon: +48 123456789</p>
+					<p>Telefon: +48 987654321</p>
+				</div>
+				<div class="col-sm-3">
+					<h4>Dane</h4>
+					<p>PL 123456789</p>
+					<p>REGON: 987654321</p>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+	</footer>
+</main>
+
+<script>
+	/* Pokaz slajdów w prezentacji pojazdów */
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	}
+
+
+
+function showTitle(){
+	document.getElementById("page-name").innerHTML = document.title;
+}
+showTitle();
+
+
+/* Koniec */
+</script>
+</body>
+</html>

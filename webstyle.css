@@ -1,0 +1,715 @@
+* {
+	/* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.2rem;
+}
+
+ul {
+	list-style-type: none;
+	font-family: Montserrat;
+	font-size: 1.4rem;
+}
+
+img {
+	/*width: 100%;
+	height: 100%;*/
+	display: block;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+a, a:focus, a:hover {
+	text-decoration: none;
+	
+}
+
+p {
+	margin: 0;
+	line-height: 1.6em;
+}
+
+button {
+	cursor: pointer;
+}
+
+.white a{
+	color: white;
+}
+
+.top a{
+	color: rgb(102, 102, 102);
+}
+
+li.current a {
+	color: rgb(0, 158, 175);
+	font-weight: bold;
+}
+
+.country-list {
+	display: none;
+	position: absolute;
+	padding-top: 5rem;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	padding-bottom: .8rem;
+	background: rgb(255, 255, 255);
+	font-weight: bold;
+	
+}
+.country-list img {
+	display: inline-block;
+	width: 25px;
+	/*height: 75%;*/
+}
+
+.country-head {
+	text-align: left;
+	/*padding-right: 3em;*/
+}
+.header {
+	background: rgb(241, 241, 241);
+}
+
+.main-menu, .vehicles-header {
+	background: rgb(255, 255, 255);
+}
+
+.vehicles-header {
+	padding-top: 10rem;
+}
+
+.main-menu-social li {
+	display: inline-block;
+	padding-right: 1.5rem;
+}
+
+.main-menu-country:hover > .country-list {
+	display: block;
+}
+
+.main-menu-country img {
+	cursor: pointer;
+}
+
+.map-back {
+	background: url('mapbgnd.png') center top no-repeat;
+	height: 300px;
+}
+
+.navigator {
+	background: rgb(107, 107, 107);
+	padding: 1rem 0;
+}
+
+.content {
+	background: url('truck_bgnd.png') center top no-repeat;
+	height: 643px;
+}
+
+.content-subsite {
+	background: url('truck_bgnd.png') center bottom no-repeat;
+}
+
+.about, .about-subsite {
+	background: url('cloudy.png') center bottom no-repeat;
+	background-size: cover;
+}
+
+.about {
+	padding-top: 0;
+	height: 500px;
+	
+}
+.about .about-text {
+	padding-top: 15rem;
+}
+
+.about-text p {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.about-text p:first-of-type {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-top: 5rem;
+}
+.footer {
+	background: rgb(0, 0, 0);
+	color: white;
+	padding: 5rem 0;
+}
+
+.footer .main-menu-social {
+	margin-top: 3rem;
+}
+
+.footer h4 {
+	text-transform: uppercase;
+}
+
+.footer p {
+	margin: 1rem 0;
+}
+
+.footer img {
+	width: auto;
+}
+
+.footer .omega {
+	text-align: right;
+}
+
+.footer-meta {
+	font-family: PoppinsSemiBold;
+	font-size: 1.2em;
+	line-height: 2em;
+	text-transform: lowercase;
+}
+
+.footer-icons, .company {
+	text-align: right;
+}
+
+.info {
+	text-align: center;
+	margin: auto;
+	padding: 1.1rem 0;
+	width: auto;
+}
+
+.content .banner-text, .content-subsite .banner-text {
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.content .banner-text {
+	top: 180px;
+}
+
+.content .banner-text h2, .content-subsite .banner-text h2 {
+	font-size: 4.3em;
+	margin-bottom: 1em;
+}
+
+.content-subsite .banner-text h2 {
+	margin-top: 1em;
+}
+
+.content-subsite .banner-text h2.vehicles-text {
+	margin-top: 1em;
+	margin-bottom: 15rem;
+}
+
+.banner-text p {
+	font-size: 1.2em;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-header > a{
+	display: block;
+}
+
+.navbar-toggle .icon-bar {
+	background: black;
+}
+
+.nav-map {
+	padding: 2rem 0;
+}
+
+.nav-map.vehicles {
+	margin-top: 10rem;
+}
+
+.nav-map span {
+	color: rgb(102, 102, 102);
+}
+
+.nav-map span:first-child {
+	color: rgb(0, 158, 175);
+}
+
+.slider-menu {
+	position: absolute;
+	width: 100%;
+	display: table;
+	top: -10rem;
+	background: rgb(255,255,255);
+	box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.3);		
+	z-index: 1;
+}
+
+.slider-item {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 25%;	
+	padding: 5rem 0;
+}
+
+.slider-item:hover:not(:first-child) {
+	background: rgb(0, 158, 175);
+	cursor: pointer;
+}
+
+.slider-item:hover .item-text{
+	color: rgb(255, 255, 255);
+}
+
+.slider-item img {
+	width: auto;
+	display: inline-block;
+}
+
+.slider-item a {
+	display: block;
+}
+
+/*przełączanie między obrazami w sliderze*/
+
+#first-image-rev {
+	display: none;
+}
+#first-slide:hover #first-image-rev {
+	display: inline-block;
+}
+
+#first-slide:hover #first-image {
+	display: none;
+}
+
+#second-image-rev {
+	display: none;
+}
+#second-slide:hover #second-image-rev {
+	display: inline-block;
+}
+
+#second-slide:hover #second-image {
+	display: none;
+}
+
+#third-image-rev {
+	display: none;
+}
+#third-slide:hover #third-image-rev {
+	display: inline-block;
+}
+
+#third-slide:hover #third-image {
+	display: none;
+}
+
+/* Koniec przełączania w sliderze */
+
+.item-text {
+	display: block;
+	color: rgb(0,0,0);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	font-weight: bold;
+}
+
+.blue-title {
+	color: rgb(0, 158, 175);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+i.info-text {
+	padding-right: .3em;
+	padding-left: 1em;
+}
+
+.social-media {
+	margin-left: 2em;
+}
+
+.social-media i {
+	padding-left: .1em;
+	padding-right: .1em;
+}
+
+.social-icon:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+
+}
+
+.logo {
+	display: block;
+}
+
+.main-menu-navigation {
+	
+}
+.main-menu-logo .logo img {
+	max-width: 100%;
+	display: block;
+}
+
+.main-menu-items {
+	/*align-items: center;
+	justify-content: space-between;
+	display: flex;*/
+	padding: 2.4rem 0;
+}
+
+.main-menu-navigation li {
+	display: inline-block;
+	padding-right: 2.5rem;
+}
+
+.nav-map {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+}
+
+.underline {
+	border-bottom: solid 1px white;
+}
+
+.gallery-buttons {
+	text-align: center;
+}
+
+.button {
+	background: rgb(0, 158, 175);
+	border: none;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 1em 2em;
+	color: rgb(255, 255, 255);
+}
+
+.main-button, .gallery-button {
+	margin: 3em 0;
+	transition: background .3s;
+}
+
+.main-button:hover, .gallery-button:hover {
+	background: rgb(2, 123, 136);
+}
+/*.gallery {
+	padding: 5rem 0;
+}*/
+
+.gallery-article {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.gallery-button, .gallery-button:focus {
+	outline: none;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+.gallery-button.active {
+	background: rgb(0, 158, 175);
+	color: rgb(255, 255, 255);
+}
+
+.truck-buttons {
+	margin-top: 4rem;
+}
+
+.truck-buttons > button, .submit-button {
+	transition: .3s;
+}
+
+.truck-buttons > button:hover, .submit-button:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+.truck-buttons button:first-of-type {
+	margin-right: 2rem;
+}
+
+.truck-buttons span {
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+
+.news-text {
+	position: absolute;
+	bottom: 1rem;  
+	left: 2rem; 
+	color: white;
+	font-weight: bold;	 
+}
+
+.main-button p, .gallery-button p, .main-button span, .gallery-button span {
+	font-size: .8em;
+	font-weight: bold;
+}
+.submit-button {
+	position: relative;
+	float: left;
+	padding: 1.5rem 5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.page-header, .table-notice {
+	padding: 3em 0;
+}
+
+.stuff-block {
+	background: rgb(81, 62, 143); 
+}
+
+
+table.truck-details {
+	width: 100%;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	color: rgb(102, 102, 102);
+	border-spacing: 1rem 2rem;
+}
+
+table.truck-details i{
+	color: rgb(0, 158, 175);
+	font-size: 1.5rem;
+}
+
+.truck-price {
+	width: 50%;
+	margin: auto;
+	margin-top: 2.5rem;
+}
+
+.truck-price span {
+	color: rgb(102, 102, 102);
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.truck-price h1 {
+	color: rgb(0, 158, 175);
+	margin-top: 1.8rem;
+	font-size: 5rem;
+}
+
+.details-table {
+	margin-bottom: 5rem;
+	margin-top: 2.5rem;
+	border-collapse: collapse;
+	font-weight: bold;
+	width: 100%;
+}
+
+.details-table td:nth-child(odd) {
+	width: 80%;
+}
+
+.details-table td {
+	padding: 1.5rem 1.5rem;
+}
+
+table.details-table tr:nth-child(odd) {
+    background: rgb(243, 243, 243);
+}
+
+table.details-table tr:nth-child(even) {
+    background: rgb(255, 255, 255);
+}
+
+.map-contact {
+	background: url('mapa_kontaktu.jpg') center center no-repeat;
+	height: 400px;
+}
+
+.tabs-container .tab-content {
+	display: none;
+}
+
+.tabs-container .tab-content.active {
+	display: block;
+}
+
+.contact-info {
+	font-weight: bold;
+	color: rgb(0, 0, 0);	
+	margin-bottom: 5rem;
+}
+
+.contact-info, .contact-form {
+	margin-top: 3rem;
+}
+
+.contact-info i {
+	margin-right: .5rem;
+	color: rgb(0, 158, 175);
+}
+
+.contact-info-header {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.contact-icon {
+	margin-top: 1em;
+	color: black;
+	font-weight: 500;
+}
+.contact-icon i{
+	color: rgb(81, 62, 143);
+	padding-right: 0.5rem;
+}
+
+.contact-par {
+	font-size: 1.4rem;
+	padding: 2rem 0;
+}
+
+.contact-par:not(:first-of-type) {
+	border-top: solid 1px rgb(226, 222, 222);
+}
+
+input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+	background: transparent;
+	padding: 1rem 1rem;
+	margin-bottom: 1.5rem;
+	border: solid 2px rgb(0, 158, 175);
+	font-family: Montserrat, sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+
+textarea {
+	resize: vertical;
+}
+
+
+::placeholder {
+	color: black;
+}
+
+/* Galeria zdjęć pojazdu */
+
+.mySlides {
+	display: none;
+	width: 100%;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.prev, .next {
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	background: black;
+}
+
+.prev {
+	top: 0;
+	text-align: center;
+}
+
+.next {
+	bottom: 0;
+	text-align: center;
+}
+
+.img-responsive {
+	transition: box-shadow .5s;
+}
+
+.img-responsive:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+.margin-no-padding {
+	padding: 0;
+	margin: 0 15px;
+}
+
+.prev-slide {
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+.next-slide {
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+.demo {
+  opacity: 0.6;
+  margin: 2rem 0;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.form .error > input, .form .error > textarea {
+	border: solid 2px red;
+	background: rgb(236, 197, 197);
+}
+
+.no-shadow:hover {
+	box-shadow: none;
+}
+
+@media (max-width: 500px) {
+	.slider-menu {
+		position: relative;
+	}
+
+	.about {
+		height: auto;
+	}
+	.about .about-text {
+		padding-top: 0;
+	}
+
+	.about-subsite {
+		background: url(cloudy.png) left center no-repeat;
+	}
+
+	.truck-price {
+		width: 100%;
+		text-align: center;
+	}
+
+	.truck-buttons {
+		text-align: center;
+	}
+
+	.truck-buttons > button {
+		width: 50%;
+		margin: 0;
+	}
+
+	.truck-buttons button:first-of-type {
+    	margin-right: 0;
+} 
