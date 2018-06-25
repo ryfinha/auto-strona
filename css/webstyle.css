@@ -103,7 +103,7 @@ li.current a {
 }
 
 .map-back {
-	background: url('mapbgnd.png') center top no-repeat;
+	background: url('../images/mapbgnd.png') center top no-repeat;
 	height: 300px;
 }
 
@@ -113,16 +113,16 @@ li.current a {
 }
 
 .content {
-	background: url('truck_bgnd.png') center top no-repeat;
+	background: url('../images/truck_bgnd.png') center top no-repeat;
 	height: 643px;
 }
 
 .content-subsite {
-	background: url('truck_bgnd.png') center bottom no-repeat;
+	background: url('../images/truck_bgnd.png') center bottom no-repeat;
 }
 
 .about, .about-subsite {
-	background: url('cloudy.png') center bottom no-repeat;
+	background: url('../images/cloudy.png') center bottom no-repeat;
 	background-size: cover;
 }
 
@@ -533,7 +533,7 @@ table.details-table tr:nth-child(even) {
 }
 
 .map-contact {
-	background: url('mapa_kontaktu.jpg') center center no-repeat;
+	background: url('../images/mapa_kontaktu.jpg') center center no-repeat;
 	height: 400px;
 }
 
@@ -693,7 +693,7 @@ textarea {
 	}
 
 	.about-subsite {
-		background: url(cloudy.png) left center no-repeat;
+		background: url('../images/cloudy.png') left center no-repeat;
 	}
 
 	.truck-price {
